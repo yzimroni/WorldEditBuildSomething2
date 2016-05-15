@@ -79,6 +79,8 @@ public abstract class LocalConfiguration {
 
     public boolean profile = false;
     public Set<Integer> disallowedBlocks = new HashSet<Integer>();
+    public Set<String> allowedBlocks = new HashSet<String>();
+    public boolean onlyAllowedBlocks = false;
     public int defaultChangeLimit = -1;
     public int maxChangeLimit = -1;
     public int defaultMaxPolygonalPoints = -1;

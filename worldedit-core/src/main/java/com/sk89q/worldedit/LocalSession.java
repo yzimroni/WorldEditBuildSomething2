@@ -116,6 +116,16 @@ public class LocalSession {
         checkNotNull(config);
         this.config = config;
     }
+    
+    /**
+     * Get the configuration.
+     * @return 
+     *
+     * @return the configuration.
+     */
+    public LocalConfiguration getConfiguration() {
+        return this.config;
+    }
 
     /**
      * Called on post load of the session from persistent storage.

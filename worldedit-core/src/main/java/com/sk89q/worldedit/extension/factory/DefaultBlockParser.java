@@ -240,9 +240,15 @@ class DefaultBlockParser extends InputParser<BaseBlock> {
 
         // Check if the item is allowed
         Actor actor = context.requireActor();
-        if (context.isRestricted() && actor != null && !actor.hasPermission("worldedit.anyblock")
-                && worldEdit.getConfiguration().disallowedBlocks.contains(blockId)) {
-            throw new DisallowedUsageException("You are not allowed to use '" + input + "'");
+        LocalSession session = context.requireSession();
+        LocalConfiguration configuration = session.getConfiguration();
+        
+        String blockIdAndData = blockId + ":" + (typeAndData.length > 1 ? typeAndData[1] : 0);
+        
+        if (context.isRestricted() && actor != null) {
+            if ((!actor.hasPermission("worldedit.anyblock") && configuration.disallowedBlocks.contains(blockId)) || (configuration.onlyAllowedBlocks && !configuration.allowedBlocks.contains(blockIdAndData))) {
+                throw new DisallowedUsageException("You are not allowed to use '" + input + "'");
+            }
         }
 
         if (blockType == null) {
