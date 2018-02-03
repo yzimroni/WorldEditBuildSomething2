@@ -1,36 +1,5 @@
-![WorldEdit](http://static.sk89q.com/readme/worldedit.png)
-=========
+WorldEditBuildSomething2 is a modified version of [WorldEdit plugin](https://github.com/sk89q/WorldEdit) to the [BuildSomething2 minigame](https://github.com/yzimroni/BuildSomething2).
 
-WorldEdit is an easy-to-use in-game world editor for Minecraft, supporting both
-single player and multiplayer, that lets you:
+This version includes a "block whitelist" feature - Allowing players to use only certain blocks with WorldEdit commands/tools
 
-* Change thousands of blocks in an area at once by selecting regions.
-* Use over 100 functions to modify the world or remove problems.
-* Remove large chunks of land as you wish.
-* Sculpt the world and build mountains with brushes.
-* Fix annoyances such as broken water, missing snow, raging fires, and more.
-
-WorldEdit is open source and is available under the GNU Lesser General Public
-License v3.
-
-Compiling
----------
-
-See [COMPILING.md](COMPILING.md) for a guide on compiling WorldEdit.
-
-Contributing
-------------
-
-We happily accept contributions, especially through pull requests on GitHub.
-Submissions must be licensed under the GNU Lesser General Public License v3.
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for important guidelines to follow.
-
-Links
------
-
-* [Visit our website](http://www.enginehub.org/)
-* [IRC channel](http://skq.me/irc/irc.esper.net/sk89q/) (#sk89q on irc.esper.net)
-* [Issue tracker](http://youtrack.sk89q.com/issues/WORLDEDIT)
-* [Continuous integration](http://builds.enginehub.org) [![Build Status](https://travis-ci.org/sk89q/WorldEdit.svg?branch=master)](https://travis-ci.org/sk89q/WorldEdit)
-* [End-user documentation](http://wiki.sk89q.com/wiki/WorldEdit)
+The relevant commit is [b6d0e75](https://github.com/yzimroni/WorldEditBuildSomething2/commit/b6d0e759c71363a16c1f8a83041192ddcd43ddef)
